@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>proposal</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="proposal_files/libs/clipboard/clipboard.min.js"></script>
+<script src="proposal_files/libs/quarto-html/quarto.js"></script>
+<script src="proposal_files/libs/quarto-html/popper.min.js"></script>
+<script src="proposal_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="proposal_files/libs/quarto-html/anchor.min.js"></script>
+<link href="proposal_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="proposal_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="proposal_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="proposal_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="proposal_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;json&quot;}">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title: <span class="st">"Project proposal"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">format</span>: </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  html:</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    toc: true</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    toc<span class="op">-</span>title: Contents</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    code<span class="op">-</span>fold: show</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span><span class="op">-</span>contained: true</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>jupyter: python3</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="instructions" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="instructions">Instructions</h2>
+<ol type="1">
+<li><p>Please answer the following questions as part of your project proposal.</p></li>
+<li><p>Write your answers in the <em>Markdown</em> cells of the Jupyter notebook. You don’t need to write any code, but if you want to, you may use the <em>Code</em> cells.</p></li>
+<li><p>Use <a href="https://quarto.org/docs/output-formats/html-basics.html">Quarto</a> to print the <em>.ipynb</em> file as HTML. You will need to open the command prompt, navigate to the directory containing the file, and use the command: <code>quarto render filename.ipynb --to html</code>. Submit the HTML file.</p></li>
+<li><p>The project proposal is worth 8 points, and is due on <strong>27th January 2023 at 11:59 pm</strong>.</p></li>
+<li><p>You must make one submission as a group, and not individually.</p></li>
+<li><p>Each team member must have at least <strong>one commit</strong> on the team’s github repository. No points will be awarded to the team member(s) with no commits.</p></li>
+<li><p>Share the link of your project’s GitHub repository <a href="https://docs.google.com/spreadsheets/d/1khao3unpj_vsx4kOSg_Zzo77YK1UWL2w73Oa0aAirOo/edit#gid=0">here</a>.</p></li>
+</ol>
+</section>
+<section id="team-name" class="level1">
+<h1>1) Team name</h1>
+<p>Mention your team name.</p>
+<p><em>(0 points)</em></p>
+<p><b>Shake Shack</b></p>
+</section>
+<section id="member-names" class="level1">
+<h1>2) Member names</h1>
+<p>Mention the names of your team members.</p>
+<p><em>(0 points)</em></p>
+<p><b>Chanel Sun, Lucy Han, Joseph Prette, Jackson Bremen</b></p>
+</section>
+<section id="link-to-the-github-repository" class="level1">
+<h1>3) Link to the GitHub repository</h1>
+<p>Share the link of the team’s project repository on GitHub.</p>
+<p>Also, put the link of your project’s GitHub repository <a href="https://docs.google.com/spreadsheets/d/1khao3unpj_vsx4kOSg_Zzo77YK1UWL2w73Oa0aAirOo/edit#gid=0">here</a>.</p>
+<p>We believe there is no harm in having other teams view your GitHub repository. However, if you don’t want anyone to see your team’s work, you may make the repository <em>Private</em> and add your instructor and graduate TA as <em>Colloborators</em> in it.</p>
+<p><em>(0 points)</em></p>
+<p><b>GitHub Repository: <a href="https://github.com/jprette/STAT303-2_Project_Information_Superhighway">GitHub Repository</a></b></p>
+</section>
+<section id="topic" class="level1">
+<h1>4) Topic</h1>
+<p>Mention the topic of your course project.</p>
+<p><em>(0.25 points)</em></p>
+<p>Classfication of mushroom as edible or poisonous based on secondary characteristics</p>
+</section>
+<section id="problem-statement" class="level1">
+<h1>5) Problem statement</h1>
+<p>Explain the problem statement. The problem statement must include:</p>
+<ol type="1">
+<li><p>The problem</p></li>
+<li><p>Is it a regression or classification problem or a combination of both?</p></li>
+<li><p>Is it an inference or prediction problem or a combination of both?</p></li>
+<li><p>How will you assess model accuracy?</p></li>
+</ol>
+<ul>
+<li>If it is a classification problem, then which measure(s) will you optimize for your model – precision, recall, false negative rate (FNR), accuracy, ROC-AUC etc., and why?</li>
+<li>If it is a regression problem, then which measure(s) will you optimize for your model – RMSE (Root mean squared error), MAE (mean absolute error), maximum absolute error etc., and why?</li>
+</ul>
+<ol start="5" type="1">
+<li>What techniques do you think you may need to use to improve your model? If you have too many variables, some of which are correlated or collinear, you may need to do variable selection <em>(techniques for variable selection that you will learn later in the course - stepwise regression, lasso, ridge regression)</em>. If the variables do not have a linear relationship with the response, or if some of the modeling assumptions are not satisfied, you may need to transform the predictors and/or the response (variable transformation) to obtain a better fit.</li>
+</ol>
+<p><em>(5 points)</em></p>
+<p>1.) We will be using a data set on mushroom secondary characterists and using them to determine wheter or not they are poisonous. We will be training the model using a portion of the data set found (see below), and using the remainder to test our accuracy.</p>
+<p>2.) This will be a classification problem as we are looking to determine a categorical variable of either ‘Posionous’ or ‘Not Poisonous’.</p>
+<p>3.) Our results will be an inference as we are making a determination of something fully within the scope of our data, not looking forward to assess potential future.</p>
+<p>4.) Because of the nature of our problem, if we consider poisonous to be a ‘positive’ result, we will want to optimize the model to reduce the rate of false negatives (ie determining the musroom to be ‘Not Poisonous’ when in fact it is ‘Poisonous’) to ensure safety of our stakeholders.</p>
+<p>5.) At this time, we are not certain of the specific techniques that we will be utilizing to perform this analysis. Based on the large number of variables, we will likely need to do variable selection to determine which are most useful. Because our input variables will be categorical, we will need dummy variables.</p>
+</section>
+<section id="data-sources" class="level1">
+<h1>6) Data sources</h1>
+<p>What data sources will you use, and how will the data help answer the questions? Explain.</p>
+<p>If the data is open source, share the link of the data.</p>
+<p><em>(1 point)</em></p>
+<p>We used a public dataset from UC Irvin Machine Learning Repository. This dataset consists of descriptions of hypothetical samples corresponding to 23 species of gilled mushrooms in the Agaricus and Lepiota family with over 22 different attributes or characteristics of each species. Each species is identified as definitely edible, definitely poisonous, or of unknown edibility and not recommended.</p>
+<p>https://archive.ics.uci.edu/ml/datasets/Mushroom</p>
+</section>
+<section id="stakeholders" class="level1">
+<h1>7) Stakeholders</h1>
+<p>Who are the stakeholders, and how will your project benefit them? Explain.</p>
+<p><em>(1 point)</em></p>
+<p>Our stakeholders can be a lot of people - they can be mushroom lovers, restaurant cooks, or even people who are lost in the woods. Many instances where people were poisoned by mushrooms were either because people are confused between an edible species with a toxic one or they failed to cook mushrooms that have heat-liable toxins. Our project will help stakeholders to predict the probability that the mushrooms they have are poisonous or edible, with the purpose of keeping them safe and informed.</p>
+</section>
+<section id="results" class="level1">
+<h1>8) Results</h1>
+<p>What kind of results do you expect?</p>
+<p>How much accuracy is required / desired in your model (based on the metric(s) chosen in question 5), such that it is useful to the stakeholders and why?</p>
+<p><strong>Hint:</strong> If it is a classification model, then your model must be at least better than random classification. If it is a regression model, then your model must be at least better than trivial models, such as the one with only the intercept term.</p>
+<p><em>(0.5 point)</em></p>
+<p>We would expect the model to be able to accurately classify a large percentage of mushrooms in the test set as either poisonous or edible. However, the data set includes an class “of unknown edibility and not recommended”. This can complicate the classification problem as the model may not have enough information to make a confident prediction.</p>
+<p>Considering the stakeholders, mushroom lovers would want a high precision and recall to avoid eating poisonous mushrooms, restaurant cooks would want a high precision to avoid serving poisonous mushrooms to their customers, and people who are lost in the woods would want a high recall to identify poisonous mushrooms to avoid. We need to minimize false negative rate, i.e.&nbsp;the level of poisonous mushrooms that are identified as edible, for the safety of our stakeholders.</p>
+</section>
+<section id="work-split" class="level1">
+<h1>9) Work-split</h1>
+<p>How do you plan to split the project work amongst individual team members?</p>
+<p><em>(0.25 point)</em></p>
+<p>Part1: explore data, conduct statiscal testing and domain research (Joseph &amp; Jackson)</p>
+<p>Part2: develop manual and lasso model; assumptions and fitting (Chanel &amp; Jackson)</p>
+<p>Part3: subset selection models; test model accuracy (Chanel &amp; Lucy)</p>
+<p>Part4: report writing (Joseph &amp; Lucy)</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
