@@ -234,3 +234,4 @@ poetry.toml
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,macos,jupyternotebooks
+Wrapper_Method_forward_selection.ipynb
