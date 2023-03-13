@@ -235,3 +235,6 @@ poetry.toml
 
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,macos,jupyternotebooks
 Wrapper_Method_forward_selection.ipynb
+
+# Ignore temp data file
+/Project\ Code/DataExploration/debug_data.csv
